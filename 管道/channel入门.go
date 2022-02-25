@@ -12,7 +12,7 @@ import "fmt"
 注意事项：
 1.channel是指针类型，必须初始化才能完成数据写入，即必须make后才能使用。
 2.channel是有数据类型的，一个string数据类型的channel只能存放string类型数据。
-3.make时不设置容量就是无缓冲channel，设置大于0的容量就是有缓冲channel。
+3.make时不设置容量或者设置为false就是无缓冲channel，设置大于0的容量就是有缓冲channel。
 4.channel关闭后不能再放数据，再放会报错。
 
 在没有使用协程的情况下：
