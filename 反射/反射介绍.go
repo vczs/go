@@ -29,7 +29,7 @@ interface{}转原来变量，使用类型断言：    v := iVal.(Student)
 1.reflect.Type().Kind()和reflect.Value().Kind()都可以获取变量的类别，返回的是一个常量。
 2.Type是类型，Kind是类别；两者可能相同也可能不同。
 	var num int = 10 num的Type是int，Kind也是int
-	var stu Student  stu的Type是包名.Student，Kind是struct
+	var stu Student  stu的Type是main.Student，Kind是struct
 3.使用反射获取变量的值，要类型匹配；比如修改int类型的变量就应该使用reflect.Value(变量).Int()
 4.通过反射修改变量的值，应通过变量的指针完成修改，这样才能改变传入变量的值；使用reflect.Value().Elem()获取传入指针变量的值。
 */
