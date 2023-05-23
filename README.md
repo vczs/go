@@ -1,2 +1,2 @@
 # go-base
-go语言基础
+go的各种case
